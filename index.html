@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Full Stack Portfolio</title>
+    <meta property="og:image" content="https://bolt.new/static/og_default.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png" />
+  </head>
+  <body>
+<div class="fixed inset-0 pointer-events-none overflow-hidden">
+  <div class="animate-sprinkle absolute bg-blue-500/20 w-1 h-1 rounded-full" style="top: 80%; left: 20%; animation-delay: 0s;"></div>
+  <div class="animate-sprinkle absolute bg-white/10 w-2 h-2 rounded-full" style="top: 90%; left: 60%; animation-delay: 2s;"></div>
+  <div class="animate-sprinkle absolute bg-purple-500/20 w-1.5 h-1.5 rounded-full" style="top: 70%; left: 85%; animation-delay: 4s;"></div>
+</div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx">
+
+
+document.addEventListener('mousemove', (e) => {
+  const x = e.clientX + 'px';
+  const y = e.clientY + 'px';
+  document.documentElement.style.setProperty('--mouse-x', x);
+  document.documentElement.style.setProperty('--mouse-y', y);
+});
+    </script>
+  </body>
+</html>

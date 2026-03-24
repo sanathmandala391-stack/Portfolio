@@ -1,0 +1,176 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-slate-950 text-white;
+  }
+}
+
+@layer utilities {
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes gradient {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out;
+  }
+
+  .animate-fade-in-delay {
+    animation: fadeIn 1s ease-out 0.3s both;
+  }
+
+  .animate-fade-in-delay-2 {
+    animation: fadeIn 1s ease-out 0.6s both;
+  }
+
+  .animate-fade-in-delay-3 {
+    animation: fadeIn 1s ease-out 0.9s both;
+  }
+
+  .animate-fade-in-delay-4 {
+    animation: fadeIn 1s ease-out 1.2s both;
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-950;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-700 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-600;
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+  --spotlight-color: rgba(255, 255, 255, 0.05);
+}
+
+@layer base {
+  * {
+    scroll-behavior: smooth;
+    @apply border-slate-800;
+  }
+
+  body {
+    /* Pure professional dark theme */
+    @apply bg-[#020617] text-slate-300 antialiased selection:bg-blue-500/30;
+    background-image: 
+      radial-gradient(circle at var(--mouse-x) var(--mouse-y), var(--spotlight-color) 0%, transparent 40%),
+      radial-gradient(circle at 50% -20%, rgba(56, 189, 248, 0.08), transparent 50%);
+    background-attachment: fixed;
+  }
+}
+
+@layer utilities {
+  /* --- 1. THE MOUSE DRAGGER / SPOTLIGHT --- */
+  /* Add this class to your main container to see a light follow your mouse */
+  .mouse-glow {
+    position: relative;
+  }
+  .mouse-glow::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(59, 130, 246, 0.1), transparent 40%);
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  /* --- 2. FLOATING SPRINKLES (ANIMATION) --- */
+  @keyframes sprinkle-float {
+    0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+    50% { opacity: 0.8; }
+    100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+  }
+
+  .animate-sprinkle {
+    animation: sprinkle-float 6s ease-in-out infinite;
+  }
+
+  /* --- 3. PROFESSIONAL REVEAL (FOR TEXT) --- */
+  @keyframes reveal-up {
+    from { transform: translateY(20px); opacity: 0; filter: blur(5px); }
+    to { transform: translateY(0); opacity: 1; filter: blur(0); }
+  }
+
+  .animate-reveal {
+    animation: reveal-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  /* --- 4. THE GLASS CARD (ULTRA PRO) --- */
+  .pro-card {
+    @apply bg-slate-900/40 border border-slate-800 backdrop-blur-xl;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .pro-card:hover {
+    @apply border-blue-500/50 bg-slate-900/60;
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5), 0 0 20px rgba(59, 130, 246, 0.1);
+  }
+
+  /* --- 5. SMOOTH GRADIENT TEXT --- */
+  .text-shiny {
+    @apply bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-slate-500;
+  }
+}
+
+/* Custom Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-[#020617];
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-800 rounded-full hover:bg-blue-600 transition-colors;
+}

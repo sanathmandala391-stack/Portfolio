@@ -1,0 +1,83 @@
+import { PortfolioData } from '../types/portfolio';
+
+export const portfolioData: PortfolioData = {
+  name: 'Sanath kumar Mandala',
+  title: 'Full Stack Developer',
+  bio: 'Passionate full-stack developer with expertise in building scalable web applications. I specialize in creating elegant solutions to complex problems, with a focus on clean code and exceptional user experiences.',
+  email: 'sanathmandala391@gmail.com',
+  phone: '+917989718198',
+  location: 'Hyderabad, India',
+  profileImage: './profile.jpeg',
+  resumeUrl: '/resume.pdf',
+
+  skills: [
+    { name: 'React', level: 95, category: 'frontend' },
+    { name: 'TypeScript', level: 40, category: 'frontend' },
+    { name: 'Next.js', level: 45, category: 'frontend' },
+    { name: 'Tailwind CSS', level: 40, category: 'frontend' },
+    { name: 'Node.js', level: 95, category: 'backend' },
+    { name: 'Express', level: 95, category: 'backend' },
+    { name: 'Python', level: 70, category: 'backend' },
+    { name: 'MySQL', level: 95, category: 'database' },
+    { name: 'MongoDB', level: 95, category: 'database' },
+    { name: 'Supabase', level: 50, category: 'database' },
+    { name: 'Git', level: 90, category: 'tools' },
+    { name: 'Docker', level: 75, category: 'tools' },
+    { name: 'AWS', level: 70, category: 'tools' },
+  ],
+
+  projects: [
+    {
+      id: '1',
+      title: 'Food Services Web App',
+      description: 'A full-featured Food Service platform with real-time inventory management, and admin dashboard. Built with React, Node.js, Express.js and MongoDB.',
+      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['React', 'Node.js', 'Express.js', 'MongoDB', 'JavaScrpit'],
+      liveUrl: 'https://client-react-two.vercel.app/',
+      githubUrl: 'https://github.com/sanathmandala391-stack/client_react',
+    },
+    {
+      id: '2',
+      title: 'CSE Department Class Webiste',
+      description: 'Collaborative task management application with real-time updates, team management, and advanced filtering. Features include drag-and-drop, notifications, and analytics.',
+      image: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['React', 'Node.js', 'Express.js', 'MongoDB', 'JavaScrpit'],
+      liveUrl: 'https://cse-frontend-eight.vercel.app/',
+      githubUrl: 'https://github.com/sanathmandala391-stack/cse-frontend',
+    },
+    {
+      id: '3',
+      title: 'SGM College Website',
+      description: 'A centralized SGM College website where students can access updates, notes, notices, and easily raise complaints online.',
+      image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['React', 'Springboot', 'Java', 'MySQL', 'Docker'],
+      liveUrl: 'https://sgm-theta.vercel.app/',
+      githubUrl: 'https://github.com/sanathmandala391-stack/SGM',
+    },
+    {
+      id: '4',
+      title: 'AI Genarator',
+      description: 'AI-powered content generation tool with multiple templates, SEO optimization, and content scheduling. Integrates with OpenAI and supports multiple languages.',
+      image: 'https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['React', 'Google_Gemini', 'MongoDB','Groq', 'Node.js', 'Express.js'],
+      liveUrl: 'https://sanathai.vercel.app/',
+      githubUrl: 'https://github.com/sanathmandala391-stack/ai_front',
+    },
+      {
+      id: '5',
+      title: 'Urban Services',
+      description: 'A convenient platform that connects users with trusted local professionals for everyday urban services like cleaning, repairs, and maintenance.',
+      image: 'https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['React', 'Java', 'SpringBoot','MySQL', 'Docker'],
+      liveUrl: 'https://frontend-serve-ease-mtnc.vercel.app/',
+      githubUrl: 'https://github.com/sanathmandala391-stack/FrontendServeEase',
+    },
+  ],
+
+  socialLinks: [
+    { platform: 'GitHub', url: 'https://github.com/sanathmandala391-stack', icon: 'github' },
+    { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/sanath-mandala-bb3810380?utm_source=share_via&utm_content=profile&utm_medium=member_android', icon: 'linkedin' },
+    { platform: 'Twitter', url: 'https://twitter.com/yourusername', icon: 'twitter' },
+    { platform: 'Email', url: 'sanathmandala391@gmail.com', icon: 'mail' },
+  ],
+};
