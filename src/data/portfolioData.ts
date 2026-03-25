@@ -91,7 +91,6 @@ export const portfolioData: PortfolioData = {
       githubUrl: 'https://github.com/sanathmandala391-stack/',
     },
   ],
-  ],
 
   socialLinks: [
     { platform: 'GitHub', url: 'https://github.com/sanathmandala391-stack', icon: 'github' },
