@@ -72,6 +72,25 @@ export const portfolioData: PortfolioData = {
       liveUrl: 'https://frontend-serve-ease-mtnc.vercel.app/',
       githubUrl: 'https://github.com/sanathmandala391-stack/FrontendServeEase',
     },
+    {
+      id: '6',
+      title: 'E-Commerce Store',
+      description: 'An e-commerce website is an online platform that allows users to browse, buy, and sell products or services over the internet.',
+      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['React', 'Node.js', 'Express.js','MongoDb', 'Cloudinary'],
+      liveUrl: 'https://javen-co-frontend-vtiq.vercel.app/',
+      githubUrl: 'https://github.com/sanathmandala391-stack/',
+    },
+    {
+      id: '7',
+      title: 'E-Commerce Admin-Dashboard',
+      description: 'An e-commerce website is an online platform that allows users to browse, buy, and sell products or services over the internet.',
+      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['React', 'Node.js', 'Express.js','MongoDb', 'Cloudinary'],
+      liveUrl: 'https://admin-dashboard-coral-five-81.vercel.app/',
+      githubUrl: 'https://github.com/sanathmandala391-stack/',
+    },
+  ],
   ],
 
   socialLinks: [
