@@ -8,7 +8,7 @@ export const portfolioData: PortfolioData = {
   phone: '+917989718198',
   location: 'Hyderabad, India',
   profileImage: './profile.jpeg',
-  resumeUrl: '/resume.pdf',
+  resumeUrl: '/sanathFinalResume.docx',
 
   skills: [
     { name: 'React', level: 95, category: 'frontend' },
